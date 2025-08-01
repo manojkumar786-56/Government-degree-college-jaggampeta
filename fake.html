@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Academics Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: repeating-linear-gradient(
+        45deg,
+        #f0f0f0,
+        #f0f0f0 10px,
+        #e8e8e8 10px,
+        #e8e8e8 20px
+      );
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 250px;
+      background-color: #2e2731;
+      color: white;
+    }
+
+    .sidebar h2 {
+      background-color: #2e2731;
+      padding: 15px;
+      text-transform: uppercase;
+      font-size: 18px;
+      border-bottom: 1px solid #444;
+    }
+
+    .sidebar ul {
+      list-style-type: none;
+    }
+
+    .sidebar ul li {
+      background: white;
+      color: black;
+      padding: 10px 15px;
+      border-bottom: 1px solid #ddd;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .sidebar ul li:hover {
+      background: #f0f0f0;
+    }
+
+    /* Main content */
+    .main-content {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .main-content h2 {
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #0b87ff;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #066fd1;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+      }
+
+      .main-content {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>ACADEMICS</h2>
+      <ul>
+        <li>Departments</li>
+        <li>Programmes Offered</li>
+        <li>Certificate Courses</li>
+        <li>Academic Calendar</li>
+        <li>Curricular Transaction Plan</li>
+        <li>Outcomes</li>
+        <li>Feedback</li>
+        <li>Board Of Studies</li>
+        <li>College Activities</li>
+        <li>LMS / E-tools developed By faculty</li>
+        <li>Admissions Category-wise</li>
+        <li>Graduate attributes</li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <h2>Admissions</h2>
+      <a href="#" class="button">UG Admissions 2023-24</a>
+    </div>
+  </div>
+</body>
+</html>
